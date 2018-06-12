@@ -1,5 +1,5 @@
-import TextInput from './TextInput'
+import CurrentWeather from './CurrentWeather'
 
 export {
-  TextInput
+  CurrentWeather
 }

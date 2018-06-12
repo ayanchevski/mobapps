@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { CurrentWeather } from '../components'
 
 export default class ForecastScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
@@ -19,11 +20,11 @@ export default class ForecastScreen extends React.Component {
     const { navigation } = this.props
     const location = navigation.getParam('location', null)
     const currentWeather = navigation.getParam('currentWeather', null)
-    console.log(location)
+
     return (
       <View style={styles.container}>
         {
-          currentWeather ? <Text>Forecast</Text> : <Text>No forecast</Text>
+          currentWeather ? <CurrentWeather currentWeather={currentWeather} /> : <Text>No forecast</Text>
         }
       </View>
     )

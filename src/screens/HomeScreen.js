@@ -26,15 +26,6 @@ export default class HomeScreen extends React.Component {
     this.setState({ error })
   }
 
-  onGetCurrentWeatherPress = async () => {
-    const { city } = this.state
-    const { navigation } = this.props
-    const data = await WeatherService.getCurrentWeather(city)
-
-    // navigation.navigate('ForecastScreen')
-    console.log(data)
-  }
-
   onGetForecastPress = async () => {
     const { city } = this.state
     const { navigation } = this.props
@@ -69,10 +60,6 @@ export default class HomeScreen extends React.Component {
           style={styles.input}
           value={city}
           onChangeText={this.onCityInputTextChange}
-        />
-        <Button
-          title='Get current weather'
-          onPress={this.onGetCurrentWeatherPress}
         />
         <Button
           title='Get forecast'
