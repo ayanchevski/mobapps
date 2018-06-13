@@ -22,7 +22,7 @@ const RootStack = createStackNavigator(
     initialRouteName: 'Home',
     navigationOptions: {
       headerStyle: {
-        backgroundColor: colors.white_two
+        backgroundColor: colors.black
       },
       headerTintColor: colors.white,
       headerTitleStyle: {

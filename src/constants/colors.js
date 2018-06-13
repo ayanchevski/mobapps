@@ -10,12 +10,12 @@ export default {
   battleship_grey_two: '#6f6f7f',
   bluey_grey: '#8790ad',
   bluegrey: '#a1b1c6',
-  bluegrey_faded: 'rgba(161, 177, 198, 0.1)',
+  bluegrey_faded: 'rgb(161, 177, 198)',
   silver: '#d3d4d9',
   silver_dark: '#cfd0d5',
   silver_darker: '#c0c4d3',
   silver_light: '#e2e4eb',
-  silver_faded: 'rgba(211, 212, 217, 0.2)',
+  silver_faded: 'rgb(211, 212, 217)',
   greyish_brown: '#505050',
   pale_grey: '#f4f5fA',
   pale_grey_faded: '#44f9fafb',
@@ -54,5 +54,11 @@ export default {
   transparent: 'transparent',
   blue_purple: '#0D0084',
   barney: '#cc209f',
-  barney_two: '#b921a3'
+  barney_two: '#b921a3',
+  headerBackground: 'black',
+  smallHeaderBackground: 'rgb(96, 99, 104)',
+  backgroundColor: 'rgb(59, 61, 63)',
+  blueText: 'rgb(125, 175, 224)',
+  blueTextDark: 'rgb(21, 106, 234)',
+  forecastItemBackground: 'rgb(44, 44, 45)'
 }

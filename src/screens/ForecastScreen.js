@@ -20,11 +20,14 @@ export default class ForecastScreen extends React.Component {
     const { navigation } = this.props
     const location = navigation.getParam('location', null)
     const currentWeather = navigation.getParam('currentWeather', null)
+    const forecast = navigation.getParam('forecast', null)
 
     return (
       <View style={styles.container}>
         {
-          currentWeather ? <CurrentWeather currentWeather={currentWeather} /> : <Text>No forecast</Text>
+          currentWeather
+          ? <CurrentWeather currentWeather={currentWeather} forecast={forecast} />
+          : <Text>No forecast</Text>
         }
       </View>
     )
