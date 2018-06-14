@@ -25,7 +25,20 @@ const getItem = async key => {
   }
 }
 
+const multiGet = async keys => {
+  try {
+    const values = await AsyncStorage.multiGet(keys)
+
+    return values
+  } catch (error) {
+    console.log(error)
+
+    return null
+  }
+}
+
 export default {
   setItem,
-  getItem
+  getItem,
+  multiGet
 }

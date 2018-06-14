@@ -1,9 +1,9 @@
 import HomeScreen from './HomeScreen'
 import ForecastScreen from './ForecastScreen'
-import CurrentWeatherScreen from './CurrentWeatherScreen'
+import SettingsScreen from './SettingsScreen'
 
 export {
   HomeScreen,
   ForecastScreen,
-  CurrentWeatherScreen
+  SettingsScreen
 }

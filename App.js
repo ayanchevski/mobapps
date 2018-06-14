@@ -1,5 +1,5 @@
 import React from 'react'
-import { HomeScreen, CurrentWeatherScreen, ForecastScreen } from './src/screens'
+import { HomeScreen, SettingsScreen, ForecastScreen } from './src/screens'
 import colors from './src/constants/colors'
 import { createStackNavigator } from 'react-navigation'
 
@@ -11,8 +11,8 @@ const RootStack = createStackNavigator(
         header: null
       })
     },
-    CurrentWeatherScreen: {
-      screen: CurrentWeatherScreen
+    SettingsScreen: {
+      screen: SettingsScreen
     },
     ForecastScreen: {
       screen: ForecastScreen

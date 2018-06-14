@@ -50,6 +50,12 @@ export default class HomeScreen extends React.Component {
     }
   }
 
+  onGoToSettingsPress = () => {
+    const { navigation } = this.props
+
+    navigation.navigate('SettingsScreen')
+  }
+
   render() {
     const { city, error } = this.state
 
@@ -75,7 +81,7 @@ export default class HomeScreen extends React.Component {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
-            onPress={this.onGetForecastPress}
+            onPress={this.onGoToSettingsPress}
           >
             <Text style={styles.buttonText}>Go to settings</Text>
           </TouchableOpacity>

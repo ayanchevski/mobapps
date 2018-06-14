@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { CurrentWeather } from '../components'
+import StorageService from '../services/StorageService'
 
 export default class ForecastScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
@@ -15,9 +16,22 @@ export default class ForecastScreen extends React.Component {
       title
     }
   }
+  
+  state = {
+    tempSetting: 'c',
+    windSetting: 'kph'
+  }
+
+  componentDidMount = async () => {
+    const [[, tempSetting], [, windSetting]] = await StorageService.multiGet(['tempSetting', 'windSetting'])
+
+    this.setState({ tempSetting })
+    this.setState({ windSetting })
+  }
 
   render() {
     const { navigation } = this.props
+    const { tempSetting, windSetting } = this.state
     const location = navigation.getParam('location', null)
     const currentWeather = navigation.getParam('currentWeather', null)
     const forecast = navigation.getParam('forecast', null)
@@ -26,7 +40,12 @@ export default class ForecastScreen extends React.Component {
       <View style={styles.container}>
         {
           currentWeather
-          ? <CurrentWeather currentWeather={currentWeather} forecast={forecast} />
+          ? <CurrentWeather
+              currentWeather={currentWeather}
+              forecast={forecast}
+              tempSetting={tempSetting}
+              windSetting={windSetting}
+            />
           : <Text>No forecast</Text>
         }
       </View>

@@ -18,10 +18,10 @@ const getDayOfWeek = timestamp => {
 
 export default class CurrentWeather extends Component {
   renderForecast = ({ date, day }) => {
-    const { temp, distance } = this.props
+    const { tempSetting } = this.props
     const dayWeek = getDayOfWeek(date)
-    const minTemperatureKey = temp === 'c' ? 'mintemp_c' : 'mintemp_f'
-    const maxTemperatureKey = temp === 'c' ? 'maxtemp_c' : 'maxtemp_f'
+    const minTemperatureKey = tempSetting === 'c' ? 'mintemp_c' : 'mintemp_f'
+    const maxTemperatureKey = tempSetting === 'c' ? 'maxtemp_c' : 'maxtemp_f'
 
     return (
       <View key={date} style={styles.forecastItemWrapper}>
@@ -29,17 +29,17 @@ export default class CurrentWeather extends Component {
           <Text style={styles.forecastHeaderText}>{dayWeek}</Text>
         </View>
         <Image source={{ uri: `http:${day.condition.icon}` }} style={styles.forecastImage} />
-        <Text style={styles.maxTemp}>{`${day[maxTemperatureKey]}º${temp.toUpperCase()}`}</Text>
-        <Text style={styles.minTemp}>{`${day[minTemperatureKey]}º${temp.toUpperCase()}`}</Text>
+        <Text style={styles.maxTemp}>{`${day[maxTemperatureKey]}º${tempSetting.toUpperCase()}`}</Text>
+        <Text style={styles.minTemp}>{`${day[minTemperatureKey]}º${tempSetting.toUpperCase()}`}</Text>
         <Text style={styles.forecastText}>{day.condition.text}</Text>
       </View>
     )
   }
 
   render() {
-    const { currentWeather, forecast, temp, distance } = this.props
-    const temperatureKey = temp === 'c' ? 'temp_c' : 'temp_f'
-    const windKey = distance === 'kph' ? 'wind_kph' : 'wind_mph'
+    const { currentWeather, forecast, tempSetting, windSetting } = this.props
+    const temperatureKey = tempSetting === 'c' ? 'temp_c' : 'temp_f'
+    const windKey = windSetting === 'kph' ? 'wind_kph' : 'wind_mph'
     const date = new Date()
     const forecastDays = forecast.slice(1)
 
@@ -52,12 +52,12 @@ export default class CurrentWeather extends Component {
           <View style={styles.mainInfo}>
             <View style={styles.degreesWrapper}>
               <Image source={{ uri: `http:${currentWeather.condition.icon}` }} style={styles.conditionImage} />
-              <Text style={styles.degreeText}>{`${currentWeather[temperatureKey]}º${temp.toUpperCase()}`}</Text>
+              <Text style={styles.degreeText}>{`${currentWeather[temperatureKey]}º${tempSetting.toUpperCase()}`}</Text>
             </View>
             <Text style={styles.conditionText}>{currentWeather.condition.text}</Text>
             <View style={styles.additionalInfoWrapper}>
               <Text style={styles.additionalText}>{`Humidity: ${currentWeather.humidity}%`}</Text>
-              <Text style={styles.additionalText}>{`Wind: ${currentWeather[windKey]}${distance}`}</Text>
+              <Text style={styles.additionalText}>{`Wind: ${currentWeather[windKey]}${windSetting}`}</Text>
             </View>
           </View>
         </View>
@@ -70,13 +70,14 @@ export default class CurrentWeather extends Component {
 }
 
 CurrentWeather.defaultProps = {
-  temp: 'c',
-  distance: 'kph'
+  tempSetting: 'c',
+  windSetting: 'kph'
 }
 
 const styles = StyleSheet.create({
   mainContainer: {
-    flex: 1
+    flex: 1,
+    alignSelf: 'stretch'
   },
   mainInfoWrapper: {
     flex: 2
