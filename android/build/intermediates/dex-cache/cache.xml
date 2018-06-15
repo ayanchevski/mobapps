@@ -3,21 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_ac647f63d66b9d2eb9bc970f960a061fa36d5959.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/atanasyanchevski/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="f162442a19fff13995fbd51ba414d9ee05579080">
         <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_42f312150f71ea4cddcd04dbaad4ec4a04018dcb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_ac647f63d66b9d2eb9bc970f960a061fa36d5959.jar" />
     </item>
     <item
         is-multidex="false"
@@ -30,30 +30,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_22ec6e9002e850f0c7520af2718274320c437f40.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/atanasyanchevski/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
         <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_70cbefc4b1d398bab7614052bd48bb0ea0c5bca6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_9315fcf0ea0e5f464bd448669d1562b7b99e51c7.jar" />
     </item>
     <item
         is-multidex="false"
@@ -72,15 +54,6 @@
         revision="23.0.1"
         sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
         <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_6bbfc699c480e288e0da3200d78ec3c7248e168b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_d64f8ec654a6c4eadbb0b6a21a05513cc06c84d8.jar" />
     </item>
     <item
         is-multidex="false"
@@ -138,24 +111,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_32eaa88e897f04eaa3b22b1fd8ae36ec516ac99c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/atanasyanchevski/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_ec4d211281a7984cb678d9a65eb96c9b4300196e.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/atanasyanchevski/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
         jumboMode="false"
         optimize="true"
@@ -174,21 +129,66 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
-        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_3e7c03832e3025a3b76cecc156b98419e7d7e536.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
         <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_0a5b0b7370a6c19b4555dc1367acc6f46dfeb8a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_22ec6e9002e850f0c7520af2718274320c437f40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_9315fcf0ea0e5f464bd448669d1562b7b99e51c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_d64f8ec654a6c4eadbb0b6a21a05513cc06c84d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/atanasyanchevski/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_ec4d211281a7984cb678d9a65eb96c9b4300196e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_32eaa88e897f04eaa3b22b1fd8ae36ec516ac99c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="/Users/atanasyanchevski/Projects/fmi/weather-app/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_3e7c03832e3025a3b76cecc156b98419e7d7e536.jar" />
     </item>
 
 </items>

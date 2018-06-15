@@ -45,7 +45,6 @@ export default class HomeScreen extends React.Component {
         forecast: data.forecast.forecastday,
         location: data.location
       })
-      StorageService.setItem('city', city)
     } else {
       this.setError('No forecast available for selected city.')
     }
