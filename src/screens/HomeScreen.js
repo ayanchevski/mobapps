@@ -3,6 +3,7 @@ import { StyleSheet, View, TouchableOpacity, TextInput, Text } from 'react-nativ
 import WeatherService from '../services/WeatherService'
 import StorageService from '../services/StorageService'
 import colors from '../constants/colors'
+import GeolocationService from '../services/GeolocationService';
 
 export default class HomeScreen extends React.Component {
   state = {
@@ -11,7 +12,7 @@ export default class HomeScreen extends React.Component {
   }
 
   componentDidMount = async () => {
-    const city = await StorageService.getItem('city')
+    const city = await GeolocationService.getCurrentCity()
 
     if (city) {
       this.onCityInputTextChange(city)
