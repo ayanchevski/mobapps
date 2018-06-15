@@ -18,8 +18,8 @@ export default class SettingsScreen extends React.Component {
   componentDidMount = async () => {
     const [[, tempSetting], [, windSetting]] = await StorageService.multiGet(['tempSetting', 'windSetting'])
 
-    this.setState({ tempSetting })
-    this.setState({ windSetting })
+    this.setState({ tempSetting: tempSetting || 'c' })
+    this.setState({ windSetting: windSetting || 'kph' })
   }
 
   onTempSettingChange = async () => {
