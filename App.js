@@ -1,4 +1,5 @@
 import React from 'react'
+import { View } from 'react-native'
 import { HomeScreen, SettingsScreen, ForecastScreen } from './src/screens'
 import colors from './src/constants/colors'
 import { createStackNavigator } from 'react-navigation'
@@ -26,8 +27,11 @@ const RootStack = createStackNavigator(
       },
       headerTintColor: colors.white,
       headerTitleStyle: {
+        flex: 1,
+        textAlign: 'center',
         fontWeight: 'bold'
-      }
+      },
+      headerRight: (<View />)
     }
   }
 )

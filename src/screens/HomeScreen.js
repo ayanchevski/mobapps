@@ -69,6 +69,7 @@ export default class HomeScreen extends React.Component {
           {error ? <Text style={styles.error}>{error}</Text> : null}
           <TextInput
             placeholder='Enter city'
+            placeholderTextColor={colors.white}
             style={styles.input}
             value={city}
             onChangeText={this.onCityInputTextChange}
